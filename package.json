@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/mzp/moji/issues"
   },
-  "homepage": "https://github.com/mzp/moji#readme"
+  "homepage": "https://github.com/mzp/moji#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
 }
