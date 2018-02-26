@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    image: yarnpkg/node-yarn:node7
+    volumes:
+      - .:/app
+    working_dir: /app
