@@ -2,19 +2,22 @@ import {css} from 'aphrodite/no-important';
 import React from 'react';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
+const TRANSITION_TIME = 30000;
 export default class extends React.Component {
   tick() {
+    clearTimeout(this.state.timeoutId);
     const index = (this.state.index + 1) % React.Children.count(this.props.children);
-    this.setState({ index });
+    const timeoutId = setTimeout(this.tick.bind(this), TRANSITION_TIME);
+    this.setState({ timeoutId, index });
   }
 
   componentWillMount() {
-    const intervalId = setInterval(this.tick.bind(this), 30000);
-    this.setState({ intervalId, index: 0 });
+    const timeoutId = setTimeout(this.tick.bind(this), TRANSITION_TIME);
+    this.setState({ timeoutId, index: 0 });
   }
 
   componentWillUnmount() {
-    clearInterval(this.state.intervalId);
+    clearInterval(this.state.timeoutId);
   }
 
   render() {
