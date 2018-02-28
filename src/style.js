@@ -4,7 +4,7 @@ export default StyleSheet.create({
   root: {
     backgroundColor: 'rgb(64, 133,108)',
     color: 'white',
-    position: 'absolute',
+    position: 'fixed',
     top: '0',
     left: '0',
     right: '0',
