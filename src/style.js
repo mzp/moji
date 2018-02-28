@@ -2,8 +2,6 @@ import { StyleSheet } from 'aphrodite';
 
 export default StyleSheet.create({
   root: {
-    backgroundColor: 'rgb(64, 133,108)',
-    color: 'white',
     position: 'fixed',
     top: '0',
     left: '0',
