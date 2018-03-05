@@ -1,5 +1,12 @@
 import { StyleSheet } from 'aphrodite';
 
+const screenSize = {
+  smartphone: '@media only screen and (max-width: 479px)',
+  smartphoneLandscape: '@media only screen and (min-width: 480px) and (max-width: 767px)',
+  tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
+  desktop: '@media only screen and (min-width: 992px)',
+}
+
 export default StyleSheet.create({
   root: {
     position: 'fixed',
@@ -10,13 +17,39 @@ export default StyleSheet.create({
   },
   large: {
     textAlign: 'center',
-    fontSize: '360px'
+    margin: 0,
+    [screenSize.smartphone]: {
+      fontSize: '120px'
+    },
+    [screenSize.smartphoneLandscape]: {
+      fontSize: '150px'
+    },
+    [screenSize.tablet]: {
+      fontSize: '210px'
+    },
+    [screenSize.desktop]: {
+      fontSize: '320px'
+    }
   },
   info: {
-    width: '120px',
     margin: '0 auto',
     lineHeight: '1.4',
-    fontSize: '16px'
+    [screenSize.smartphone]: {
+      width: '80px',
+      fontSize: '12px'
+    },
+    [screenSize.smartphoneLandscape]: {
+      width: '80px',
+      fontSize: '12px'
+    },
+    [screenSize.tablet]: {
+      width: '120px',
+      fontSize: '16px'
+    },
+    [screenSize.desktop]: {
+      width: '120px',
+      fontSize: '18px'
+    }
   },
   codepoint: {
     fontFamily: 'HelveticaNeue-Bold',
@@ -36,8 +69,19 @@ export default StyleSheet.create({
     }
   },
   row: {
-    flexDirection: 'row',
-    display: 'flex'
+    display: 'flex',
+    [screenSize.smartphone]: {
+      flexDirection: 'column'
+    },
+    [screenSize.smartphoneLandscape]: {
+      flexDirection: 'row'
+    },
+    [screenSize.tablet]: {
+      flexDirection: 'row'
+    },
+    [screenSize.desktop]: {
+      flexDirection: 'row'
+    }
   },
   cell: {
     flex: 'auto'
