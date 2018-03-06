@@ -30,6 +30,7 @@
     "webpack-cli": "^2.0.9"
   },
   "dependencies": {
+    "lodash.shuffle": "^4.2.0",
     "react-css-transition-replace": "^3.0.2"
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import shuffle from 'lodash.shuffle';
 import Slide from './Slide';
 import SlideShow from './SlideShow';
 import definitions from '../definitions';
@@ -7,7 +8,7 @@ import combine from '../combine';
 
 export default class extends React.Component {
   componentWillMount() {
-    this.slides = combine(definitions, colors);
+    this.slides = combine(shuffle(definitions), shuffle(colors));
   }
 
   render() {
