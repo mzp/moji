@@ -18,6 +18,7 @@ export default StyleSheet.create({
   large: {
     textAlign: 'center',
     margin: 0,
+    width: '100%',
     [screenSize.smartphone]: {
       fontSize: '120px'
     },
@@ -28,7 +29,46 @@ export default StyleSheet.create({
       fontSize: '210px'
     },
     [screenSize.desktop]: {
-      fontSize: '320px'
+      fontSize: '320px',
+      height: '460px',
+      ':lang(en)': {
+      fontSize: '410px',
+      }
+    }
+  },
+  medium: {
+    textAlign: 'center',
+    margin: '-40px 0 0 0',
+    width: '100%',
+    [screenSize.smartphone]: {
+      margin: 0,
+      fontSize: '100px',
+      height: '140px',
+      ':lang(en)': {
+        fontSize: '130px',
+      }
+    },
+    [screenSize.smartphoneLandscape]: {
+      margin: 0,
+      fontSize: '80px',
+      height: '110px',
+      ':lang(en)': {
+        fontSize: '100px',
+      }
+    },
+    [screenSize.tablet]: {
+      fontSize: '210px',
+      height: '270px',
+      ':lang(en)': {
+        fontSize: '270px',
+      }
+    },
+    [screenSize.desktop]: {
+      fontSize: '235px',
+      height: '300px',
+      ':lang(en)': {
+        fontSize: '300px',
+      }
     }
   },
   info: {
@@ -47,7 +87,7 @@ export default StyleSheet.create({
       fontSize: '16px'
     },
     [screenSize.desktop]: {
-      width: '120px',
+      width: '140px',
       fontSize: '18px'
     }
   },
@@ -71,7 +111,7 @@ export default StyleSheet.create({
   row: {
     display: 'flex',
     [screenSize.smartphone]: {
-      flexDirection: 'column'
+      flexDirection: 'row'
     },
     [screenSize.smartphoneLandscape]: {
       flexDirection: 'row'
