@@ -7,7 +7,7 @@ export default class extends React.Component {
   tick() {
     clearTimeout(this.state.timeoutId);
     const index = (this.state.index + 1) % React.Children.count(this.props.children);
-    const timeoutId = setTimeout(this.tick.bind(this), TRANSITION_TIME);
+//    const timeoutId = setTimeout(this.tick.bind(this), TRANSITION_TIME);
     this.setState({ timeoutId, index });
   }
 

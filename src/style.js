@@ -18,6 +18,10 @@ export default StyleSheet.create({
   large: {
     textAlign: 'center',
     margin: 0,
+    verticalAlign: 'bottom',
+    display: 'table-cell',
+    textAlign: 'center',
+    width: '100%',
     [screenSize.smartphone]: {
       fontSize: '120px'
     },
@@ -28,7 +32,9 @@ export default StyleSheet.create({
       fontSize: '210px'
     },
     [screenSize.desktop]: {
-      fontSize: '320px'
+      fontSize: '320px',
+      height: '500px'
+
     }
   },
   info: {
