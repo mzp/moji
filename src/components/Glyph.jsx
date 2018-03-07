@@ -11,7 +11,7 @@ export default class extends React.PureComponent {
           {this.props.char}
         </div>
         <div className={css(Style.info)}>
-          {...this.props.children}
+          {this.props.children}
         </div>
       </div>
     );
