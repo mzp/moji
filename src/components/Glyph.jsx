@@ -7,7 +7,7 @@ export default class extends React.PureComponent {
   render() {
     return (
       <div className={this.props.className}>
-        <div className={css(this.props.isLargeFont ? Style.large : Style.medium)} lang={this.props.lang}>
+        <div className={css(Style.glyph, this.props.isLargeFont ? Style.large : Style.medium)} lang={this.props.lang}>
           {this.props.char}
         </div>
         <div className={css(Style.info)}>

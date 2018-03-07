@@ -6,6 +6,9 @@ const screenSize = {
   tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
   desktop: '@media only screen and (min-width: 992px)',
 }
+const serifFont = "'ヒラギノ明朝 ProN W3', 'HiraMinProN-W3', 'ＭＳ Ｐ明朝', 'MS PMincho', 'MS 明朝', serif"
+
+const sansSerifFont = "'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 export default StyleSheet.create({
   center: {
@@ -39,7 +42,7 @@ export default StyleSheet.create({
       fontSize: '320px',
       height: '460px',
       ':lang(en)': {
-      fontSize: '410px',
+        fontSize: '380px',
       }
     }
   },
@@ -79,6 +82,7 @@ export default StyleSheet.create({
     }
   },
   info: {
+    fontFamily: serifFont,
     margin: '0 auto',
     lineHeight: '1.4',
     [screenSize.smartphone]: {
@@ -91,15 +95,16 @@ export default StyleSheet.create({
     },
     [screenSize.tablet]: {
       width: '120px',
-      fontSize: '16px'
+      fontSize: '14px'
     },
     [screenSize.desktop]: {
       width: '140px',
-      fontSize: '18px'
+      fontSize: '14px'
     }
   },
   codepoint: {
-    fontFamily: 'HelveticaNeue-Bold',
+    fontFamily: sansSerifFont,
+    fontWeight: 'bold',
     marginBottom: '8px'
   },
   label: {
@@ -132,5 +137,8 @@ export default StyleSheet.create({
   },
   cell: {
     flex: 'auto'
+  },
+  glyph: {
+    fontFamily: serifFont
   }
 });
