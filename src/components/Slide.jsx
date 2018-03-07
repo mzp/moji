@@ -21,9 +21,11 @@ export default class extends React.Component {
     const isMultiRow = rows.length > 1;
     return (
       <div className={css(Style.root)} style={this.props.color}>
-        {rows.map((row, i) => {
-          return <Row key={i} row={row} isMultiRow={isMultiRow} />
-        })}
+        <div className={css(Style.center)}>
+          {rows.map((row, i) => {
+            return <Row key={i} row={row} isMultiRow={isMultiRow} />
+          })}
+        </div>
       </div>
     );
   }

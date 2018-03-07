@@ -8,6 +8,13 @@ const screenSize = {
 }
 
 export default StyleSheet.create({
+  center: {
+    position: 'absolute',
+    top: '50%',
+    transform : 'translateY(-50%)',
+    left: '0',
+    right: '0',
+  },
   root: {
     position: 'fixed',
     top: '0',
