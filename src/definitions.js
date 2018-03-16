@@ -148,6 +148,44 @@ export default [
   [
     { char: '集', name: 'ATUMERU', mean: 'Collect' },
     { char: '椎', name: 'SII', mean: 'Chinquapin' }
+  ],
+  [
+    { char: '集', name: 'ATUMERU', mean: 'Collect' },
+    { char: '椎', name: 'SII', mean: 'Chinquapin' }
+  ],
+  [
+    { char: '甼', name: 'CHOU', mean: 'City' },
+    { char: '町', name: 'CHOU', mean: 'City' }
+  ],
+  [
+    { char: '呆', name: 'HOU', mean: 'Stupid' },
+    { char: '困', name: 'KON', mean: 'Trouble' },
+    { char: '杏', name: 'ANZU', mean: 'Apricot' },
+    { char: '束', name: 'TABA', mean: 'Bundle' }
+  ],
+  [
+    { char: '嵒', name: 'GAN', mean: 'Stone' },
+    { char: '喦', name: 'JOU', mean: 'Speaker' },
+  ],
+  [
+    { char: '犬', name: 'INU', mean: 'Dog' },
+    { char: '太', name: 'TA', mean: 'Thick' },
+  ],
+  [
+    { char: '旧', name: 'KYU', mean: 'Old' },
+    { char: '旦', name: 'TAN', mean: 'Dawn' },
+  ],
+  [
+    { char: '陪', name: 'BAI', mean: 'Servant' },
+    { char: '部', name: 'BU', mean: 'Part' },
+  ],
+  [
+    { char: '珀', name: 'HAKU', mean: 'Amber' },
+    { char: '皇', name: 'KOU', mean: 'Emperor' },
+  ],
+  [
+    { char: '土', name: 'TUCHI', mean: 'Soil' },
+    { char: '士', name: 'SI', mean: 'Samurai' },
+    { char: '±', name: 'Plus, minus', mean: 'Math symbol', lang: 'en' }
   ]
-
 ];
